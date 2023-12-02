@@ -674,6 +674,6 @@ class BubblesPattern extends Pattern {
 }
 
 // References
-// O'Kane, R. and Possamai, D. (2018) How do I create an abstract base class in JavaScript? Stack Overflow, 28 August [online]. Available from: https://stackoverflow.com/questions/597769/how-do-i-create-an-abstract-base-class-in-javascript [Accessed 01 December 2023].
 // 7.6: Checking Objects Intersection Part I - p5.js Tutorial (2015) [online]. Directed by Daniel Shiffman. YouTube. Available from https://www.youtube.com/watch?v=uAfw-ko3kB8 [Accessed 01 December 2023].
+// O'Kane, R. and Possamai, D. (2018) How do I create an abstract base class in JavaScript? Stack Overflow, 28 August [online]. Available from: https://stackoverflow.com/questions/597769/how-do-i-create-an-abstract-base-class-in-javascript [Accessed 01 December 2023].
 // Wikipedia (2023) Rose (mathematics) [online] Available from: https://en.wikipedia.org/wiki/Rose_(mathematics) [Accessed 01 December 2023].
