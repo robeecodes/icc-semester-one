@@ -574,7 +574,6 @@ class ShrinkingPattern extends Pattern {
       // Set the fill to the current colour in the colours array
       this.patternSurface.fill(colours[currentColour]);
       // Increment currentColour by 1
-      // currentColour = (currentColour + 1) % colours.length;
       currentColour++;
 
       // Draw the rectangle with width i at the centre
