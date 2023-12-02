@@ -299,15 +299,15 @@ class LinesPattern extends Pattern {
   drawLines(rectColours, rectWidth, rotation) {
     // Rotate by the rotation parameter
     this.patternSurface.rotate(radians(rotation));
-    // Count tracks which colour to make the rectangle
-    let count = 0;
+    // currentColour tracks which colour to make the rectangle
+    let currentColour = 0;
     // Position rectangles along the x-axis
-    for (let x = -patternSize / 2; x < patternSize / 2; x += patternSize / rectColours.length) {
+    for (let x = -patternSize / 2; currentColour < rectColours.length; x += patternSize / rectColours.length) {
       // Set the fill of the current rectangle
-      this.patternSurface.fill(rectColours[count]);
+      this.patternSurface.fill(rectColours[currentColour]);
       // Draw the rectangle
       this.patternSurface.rect(x, -patternSize / 2, rectWidth, patternSize);
-      count++;
+      currentColour++;
     }
   }
 }
@@ -570,7 +570,7 @@ class ShrinkingPattern extends Pattern {
     let currentColour = 0;
 
     // Draw rectangles that decrease in size
-    for (let i = patternSize; i >= patternSize / colours.length; i -= patternSize / colours.length) {
+    for (let i = patternSize; currentColour < colours.length; i -= patternSize / colours.length) {
       // Set the fill to the current colour in the colours array
       this.patternSurface.fill(colours[currentColour]);
       // Increment currentColour by 1
