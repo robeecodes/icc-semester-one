@@ -1,19 +1,20 @@
 // Array of the different possible Pattern classes which will be drawn to the canvas
 const patternStyles = [ShapesPattern, CrossesPattern, DashesPattern, LinesPattern, TartanPattern, RosesPattern, CrosshairPattern, ShrinkingPattern, BubblesPattern];
 
-// patternSize and brushSize are global variables so they can be accessed by the Pattern classes as needed
+// patternSize, brushSize and brushColour are global variables so they can be accessed by the Pattern classes as needed
 let patternSize, brushSize, brushColour;
 
 function setup() {
   // Create the canvas
   createCanvas(500, 500);
   
-  // colorMode set to HSL so I can easily calculate complementary colours using the hue
+  // colorMode set to HSL to help calculate complementary colours using the hue
   colorMode(HSL, 360, 100, 100, 100);
   
   // Background is slightly purple so contrast between patterns and gutters is less harsh
   background(295, 7, 97);
   
+  // brushColour is the colour of strokes
   brushColour = color(288, 87, 21);
   
   // The patternSize represents the width and height of each square
