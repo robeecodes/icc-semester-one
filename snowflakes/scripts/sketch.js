@@ -7,14 +7,16 @@ const shapes = ["ellipse", "hexagon", "triangle"];
 const snowflakes = [];
 
 function setup() {
-  createCanvas(500, 500);
-  
-  
+  let canvas = createCanvas(500, 500);
+
+  // Move the canvas so it’s inside <div id="sketch-holder">.
+  canvas.parent('sketch-holder');
+
   // Set the maximum and minimum possible radii of the snowflakes
   let maxRadius = width / 5;
   let minRadius = width / 20;
-  
-  
+
+
   // Fit many snowflakes onto the screen without intersecting (Bohnacker, Groß, Laub and Lazzeroni, 2018)
   for (let i = 0; i < 100; i++) {
     // x and y positions for a new snowflake are generated
@@ -32,19 +34,19 @@ function setup() {
       }
     }
   }
-  
+
   noLoop();
 }
 
 function draw() {
   background(220);
-  
+
   // Draws the background gradient
   drawGradient(color("#7BC6FE"), color("#ECFBFF"));
-  
+
   stroke(210, 233, 255, 200);
   fill(255, 255, 255, 200);
-  
+
   // Draw each snowflake in the array
   snowflakes.forEach(snowflake => {
     snowflake.drawSnowflake();
@@ -53,14 +55,14 @@ function draw() {
 
 // Draws the background gradient
 function drawGradient(c1, c2) {
-  for (let y = 0; y < height; y ++) {
+  for (let y = 0; y < height; y++) {
 
     // stepDown calculates the current y position as a value between 1 and 0
     let stepDown = map(y, 0, height, 0, 1);
-    
+
     // colour1 and colour2 are then interpolated baased on their y-position to create the gradient effect
     let colour = lerpColor(c1, c2, stepDown);
-    
+
     // A line is drawn across the screen using the final interpolated colour
     stroke(colour);
     line(0, y, width, y);
