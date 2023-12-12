@@ -125,8 +125,8 @@ function drawMountains(c1, c2, c3, next1, next2, next3, step) {
   mountainPainting.noStroke();
   
   // Three different x-offsets for the mountains to create the parallax effect
-  let xOff1 = start * 4;
-  let xOff2 = start * 2;
+  let xOff1 = start * 12;
+  let xOff2 = start * 4;
   let xOff3 = start;
   
   // The pixel-effect of the mountains is created by drawing many small rects next to each other
