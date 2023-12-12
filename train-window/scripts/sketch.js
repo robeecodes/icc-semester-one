@@ -6,6 +6,9 @@ let trainMovement = 0;
 
 function setup() {
   createCanvas(500, 500);
+
+  // frameRate() is lowered to 24fps for better stability. 24fps is also a common frame rate in animation
+  frameRate(24);
   
   trainWindow = {
     w: 2 * width / 3,

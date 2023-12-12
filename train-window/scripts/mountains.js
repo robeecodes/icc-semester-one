@@ -125,12 +125,12 @@ function drawMountains(c1, c2, c3, next1, next2, next3, step) {
   mountainPainting.noStroke();
   
   // Three different x-offsets for the mountains to create the parallax effect
-  let xOff1 = start * 2;
-  let xOff2 = start;
-  let xOff3 = -start;
+  let xOff1 = start * 4;
+  let xOff2 = start * 2;
+  let xOff3 = start;
   
   // The pixel-effect of the mountains is created by drawing many small rects next to each other
-  let rectWidth = width / 200;
+  let rectWidth = width / 100;
   
   // Calculate the colours of each mountains relative to time of day
   let colour1 = lerpColor(color(c1), color(next1), step);
