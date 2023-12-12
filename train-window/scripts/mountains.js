@@ -165,4 +165,4 @@ function drawMountains(c1, c2, c3, next1, next2, next3, step) {
 }
 
 // References
-//  I.4: Graphing 1D Perlin Noise - Perlin Noise and p5.js Tutorial (2016) [online]. Directed by Daniel Shiffman. YouTube. Available from https://www.youtube.com/watch?v=y7sgcFhk6ZM&t=657s [Accessed 01 December 2023].
+// Daniel Shiffman (2016). I.4: Graphing 1D Perlin Noise - Perlin Noise and p5.js Tutorial. Youtube [video]. June 24. Available from https://www.youtube.com/watch?v=y7sgcFhk6ZM [Accessed 01 December 2023].
