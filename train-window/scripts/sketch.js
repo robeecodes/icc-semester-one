@@ -7,7 +7,7 @@ let trainMovement = 0;
 function setup() {
   let canvas = createCanvas(500, 500);
 
-  // Move the canvas so it’s inside our <div id="sketch-holder">.
+  // Move the canvas so it’s inside <div id="sketch-holder">.
   canvas.parent('sketch-holder');
 
   // frameRate() is lowered to 24fps for better stability. 24fps is also a common frame rate in animation
