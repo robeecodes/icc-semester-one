@@ -6,7 +6,10 @@ let patternSize, brushSize, brushColour;
 
 function setup() {
   // Create the canvas
-  createCanvas(500, 500);
+  let canvas = createCanvas(500, 500);
+
+  // Move the canvas so it’s inside <div id="sketch-holder">.
+  canvas.parent('sketch-holder');
   
   // colorMode set to HSL to help calculate complementary colours using the hue
   colorMode(HSL, 360, 100, 100, 100);

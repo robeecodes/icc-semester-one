@@ -1,15 +1,47 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap');
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
+
+  height: 100vh;
+
+  background-color: #201f25;
+  color: #d1d1d1;
 }
 
-body {
-  height: 100vh;
+body > main {
+  padding-inline: 20%;
+
+}
+
+#sketch-holder {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  margin-block: 1rem;
 }
 
 canvas {
   display: block;
+}
+
+h1 {
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
 }
